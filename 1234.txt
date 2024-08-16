@@ -1,0 +1,14 @@
+Sign-in(get access token)
+->Get Account User List(get account id)-func
+->Get Account User Token(get utility id)-func
+->Determine Utility Type(electric or water)-act-interface
+-->Get Utility List(show months)(get utility pk)-func
+-->Get Utility Unit List(show units)(get unit ID)-act-func
+-->View Utility(See the selected month utility details(startD/endD etc))-act-func
+-->Get Utitlity Item List(show all units with utilities bill)(get unit pk)
+-->Get Last Record(get last record and record)()
+-->Get Utitlity Item Details(specified unit pk details(record,prev record))
+-->Create Utility Item(with image info,unit id, record)(new unit pk)
+---><Upload Image(Get image uploaded info)
+-->Update Utility Item(update with specified unit pk)
+-->Get Common(common data?)//block

@@ -1,0 +1,24 @@
+<main class="main">
+    <div class="content">
+      <!-- <div *ngFor="let item of items" (click)="onItemClick(item.id)" class="item">
+        {{ item.description }}
+      </div> -->
+      <div class="login-container">
+        <form (ngSubmit)="getAccountUnitList()">
+          <label for="keyword">Keyword : </label>
+          <input class="input" id="keyword" type="text" [(ngModel)]="keyword" autocomplete="off" name="123"/>
+          <br/>
+          <label for="type">Type : </label>
+          <input class="input" id="type" type="text" [(ngModel)]="type" autocomplete="off" name="456"/>
+          <br/>
+          <label for="block">Block : </label>
+          <input class="input" id="block" type="text" [(ngModel)]="block" autocomplete="off" name="456"/>
+          <br/>
+          <label for="page">Page : </label>
+          <input class="input" id="page" type="text" [(ngModel)]="page" autocomplete="off" name="456"/>
+          <br/>
+          <button class="btn" (click)="getAccountUnitList()">Search</button>
+        </form>
+      </div>
+    </div>
+  </main>
